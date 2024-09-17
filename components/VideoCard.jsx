@@ -2,9 +2,9 @@ import { Text, View, Image, TouchableOpacity } from "react-native";
 import { useState } from "react";
 import { icons } from "../constants";
 import { Video, ResizeMode } from "expo-av";
+
 const VideoCard = ({ title, creator, avatar, thumbnail, video }) => {
     const [play, setPlay] = useState(false);
-
     return (
         <View className="flex-col items-center px-4 mb-14">
             <View className="flex-row gap-3 items-start">
@@ -24,10 +24,10 @@ const VideoCard = ({ title, creator, avatar, thumbnail, video }) => {
                             {title}
                         </Text>
                         <Text
-                            className="text-xs test-gray-100 font-pregular"
+                            className="text-xs text-gray-100 font-pregular"
                             numberOfLines={1}
                         >
-                            Huyen
+                            {creator}
                         </Text>
                     </View>
                 </View>
