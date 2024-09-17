@@ -12,12 +12,7 @@ import { Link, router } from "expo-router";
 import { images } from "../../constants";
 import FormField from "../../components/FormField";
 import CustomButton from "../../components/CustomButton";
-import { signIn } from "../../lib/appwrite";
-import {
-    getCurrentUser,
-    setUser,
-    setIsLogged,
-} from "../../context/GlobalProvider";
+import { signIn, getCurrentUser } from "../../lib/appwrite";
 import { useGlobalContext } from "../../context/GlobalProvider";
 const SignIn = () => {
     const { setUser, setIsLoggedIn } = useGlobalContext();
@@ -36,6 +31,7 @@ const SignIn = () => {
             const result = await getCurrentUser();
             setUser(result);
             setIsLoggedIn(true);
+            Alert.alert("Success", "User signed in successfully");
             router.replace("/home");
         } catch (error) {
             Alert.alert("Error", error.message);
