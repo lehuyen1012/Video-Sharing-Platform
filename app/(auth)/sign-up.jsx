@@ -13,8 +13,10 @@ import { images } from "../../constants";
 import FormField from "../../components/FormField";
 import CustomButton from "../../components/CustomButton";
 import { createUser } from "../../lib/appwrite";
-import { setUser, setIsLogged } from "../../context/GlobalProvider";
+import { useGlobalContext } from "../../context/GlobalProvider";
 const SignUp = () => {
+    const { setUser, setIsLoggedIn } = useGlobalContext();
+
     const [form, setForm] = useState({
         username: "",
         email: "",
@@ -32,9 +34,8 @@ const SignUp = () => {
                 form.password,
                 form.username
             );
-            // setUser(result);
-            setIsLogged(true);
-            //set it to global state
+            setUser(result);
+            setIsLoggedIn(true);
             router.replace("/home");
         } catch (error) {
             Alert.alert("Error" + error.message);
