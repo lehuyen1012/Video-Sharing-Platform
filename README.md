@@ -3,6 +3,12 @@
 
 Built with React Native for seamless user experiences, Animatable for captivating animations, and integrated with the dependable backend systems of Appwrite, this app showcases impressive design and functionality, enabling seamless sharing of videos within the community
 
+## Demo my Project in [Figma ✨](https://www.figma.com/design/MwtzygL7Mmy7VyUujwBj0q/AI-VIDEO-SHARING-PLATFORM?node-id=0-1&t=irBtEfuIgjzKOSr6-1)
+![image](https://github.com/user-attachments/assets/9b01197a-90d5-415b-ac7e-0d5f0f3fdf32)
+
+![image](https://github.com/user-attachments/assets/791b3a45-20b7-4503-a002-aec4792a1e7b)
+
+
 ## Tech Stack
 
 **Client:** ✨ React Native ✨ Expo ✨ Nativewind ✨ Animatable
@@ -54,5 +60,6 @@ To run tests, run the following command
 ## Authors
 
 - [@adrianhajdin - sujatagunale](https://github.com/adrianhajdin/aora)
+- [@JaveScript Mastery](https://youtu.be/ZBCUegTZF7M?si=UqLsYHU01txpguoP)
 
 
